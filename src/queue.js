@@ -16,7 +16,6 @@ class Queue {
  constructor() {
   this.head = null;
   this.tail = null;
-  this.length = 0;
  }
 
  getUnderlyingList() {
@@ -33,8 +32,6 @@ class Queue {
    this.tail.next = newNode;
    this.tail = newNode;
   }
-
-  this.length++;
  }
 
  dequeue() {
@@ -45,7 +42,6 @@ class Queue {
    this.tail = null;
   }
 
-  this.length--;
   return dequeuedValue;
  }
 }
